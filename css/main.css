@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* ============================== */
+/* 
+  - Title: Alpine Apartments Landing Template 
+  - Autor: Frekvenca spleta s.p.
+  - Email: info@frekvencaspleta.si
+  - Version: 1.30
+*/
+/* ============================== */
+
+
+/* ---------------------------------------------------------------------- */
+/*  Import styles
+/* ---------------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+@import url(social-icons.css);
+@import url(bootstrap-lightbox.css);
+
+/* Standar Styles --------------------------------------------------------*/
+body {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: #25579d;
+}
+a:hover {
+  text-decoration: none;  
+  color: #25579d;
+}
+p {
+  line-height: 19px;
+  margin: 0 0 15px;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  color: #A06036;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+iframe {
+  width: 100%;
+  margin: 10px 0;
+}
+input, 
+textarea,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+  border-radius: 0px!important;
+}
+/* Modal Styles --------------------------------------------------------*/
+.modal-header, 
+.modal-footer {
+  background: url('../img/bg-content.gif') repeat;
+  border-radius: 0px;
+}
+.modal-body {
+  padding-top: 30px;
+}
+.modal-body p, 
+.modal-body table {
+  padding-bottom: 10px;
+}
+input.span3, 
+textarea.span3, 
+.uneditable-input.span3 {
+  width: 184px;
+  background: #fff;
+}
+/* Button Styles --------------------------------------------------------*/
+.btn {
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.btn-blue {
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0d4592;
+  *background-color: #0d4592;
+  background-image: -moz-linear-gradient(top, #0D4592, #0d4592);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0D4592), to(#0d4592));
+  background-image: -webkit-linear-gradient(top, #0D4592, #0d4592);
+  background-image: -o-linear-gradient(top, #0D4592, #0d4592);
+  background-image: linear-gradient(to bottom, #0D4592, #0d4592);
+  background-repeat: repeat-x;
+  border-color: #0d4592;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0D4592', endColorstr='#0d4592', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus,
+.btn-blue.active,
+.btn-blue.disabled,
+.btn-blue[disabled] {
+  color: #FFFFFF;
+  background-color: #0d4592;
+	*background-color: #003bb3;
+}
+
+/* Custom container --------------------------------------------------------*/
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.container > hr {
+  margin: 60px 0;
+}
+
+/* Header Styles --------------------------------------------------------*/
+header {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  border-bottom: 10px #25579d solid;
+}
+header h1 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-family: 'Great Vibes', cursive; 
+}
+.stars {
+  padding-top: 120px;
+  background: url('../img/stars.png') no-repeat center top;
+}
+.navbar-inverse .navbar-inner {
+  border: none;
+  padding: 0;
+}
+.navbar-inverse .brand, 
+.navbar-inverse .nav > li > a  {
+  line-height: 18px;
+  color: #e4e4e4;
+}
+.navbar-inverse .nav .active > a, 
+.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background: rgba(0,0,0,0.4);
+}
+.no-active-background >  a {
+  background: none!important;
+  box-shadow: none!important;
+  color: #d6c014!important;
+}
+.navbar .nav > li > a  {
+  padding: 23px 24px 24px 24px;
+  text-shadow: 1px 1px #000;
+}
+
+/* Content Styles --------------------------------------------------------*/
+.main {
+  padding: 20px 0 50px 0;
+  background: url('../img/bg-content.gif') repeat;
+  text-shadow: 0.1em 0.1em 0.2em #fff;
+}
+.main .row-fluid {
+  padding: 20px 0;
+}
+.main .featurette-image {
+  margin-right: 20px;
+}
+.main img {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.main img:hover {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+.main h2 {
+  font-size: 24px;
+  line-height: 26px;
+}
+.main p a {
+  text-decoration: underline;
+}
+.main p a:hover {
+  text-decoration: none;
+}
+.main p .btn {
+  text-decoration: none;
+}
+.gallery {
+  margin-bottom: 40px;
+}
+.title {
+  padding: 0!important;
+}
+.submit-btn, 
+.content .form-horizontal, 
+.logos {
+  margin-top: 20px;
+}
+.smaller-items img {
+  margin-top: 10px;
+}
+.smaller-items p {
+  margin-top: 10px;
+  line-height: 18px;
+}
+.center {
+  text-align: center;
+}
+.call-us .hgroup h1 {
+  font-size: 70px;
+  line-height: 74px;
+  padding: 20px 0 25px 0;
+}
+.thumbnail {
+  background: #fff;
+  border-radius: 0;
+}
+.nav-tabs > li > a {
+  border-radius: 0;
+}
+/*Separator*/
+.separator {
+  line-height: 1em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  height: 0;
+  margin: 25px 0 35px 0;
+}
+.separator:before {
+  font-size: 24px;
+  position: relative;
+  left: 50%;
+  margin-left: -2.5em;
+  padding: 0 0.5em;
+  top: -0.2em;
+  background: url('../img/bg-content.gif') repeat;
+  color: #94918e;
+}
+
+/* Footer Styles --------------------------------------------------------*/
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background: #25579d;
+  color: #e4e4e4;
+  text-shadow: 0.1em 0.1em 0.2em #25579d;
+}
+.footer h1, 
+.footer h2, 
+.footer h3, 
+.footer h4, 
+.footer h5, 
+.footer h6 {
+  color: #e4e4e4;
+  padding-bottom: 8px;
+  font-weight: normal;
+}
+.footer a, 
+.signature  a  {
+  color: #e4e4e4;
+}
+.footer a:hover, 
+.signature  a:hover  {
+  color: #fff;
+  border-bottom: 1px #F1F0EF dotted;
+}
+.footer p, 
+.signature p {
+  padding-right: 20px;
+}
+.footer hr {
+  border-top: 1px #F1F0EF solid;
+  border-bottom: 1px #25579d solid;
+}
+.signature {
+  background-color: #1B4681;
+  padding: 30px 0 15px 0;
+  color: #F1F0EF;
+}
+
+/* Carousel base class */
+.flexslider {
+  position: relative;
+}
+.flexslider ul {
+  margin-left: 0;
+}
+.flexslider ul li {
+  list-style: none;
+}
+.carousel-caption {
+  background-color: transparent;
+  padding: 20px 20px 40px 20px;
+  top: 20%;
+  text-align: center;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 2px 1px 0px rgba(0,0,0, 0.8);
+}
+.carousel-caption h1 {
+  font-size: 120px;
+  font-weight: normal;
+}
+.carousel-caption .btn {
+  margin-top: 30px;
+}
+
+/* Features styles --------------------------------------------------------*/
+.move-top {
+  padding-top: 50px;
+}
+.page-header {
+  margin-bottom: 20px;
+}
+.pull-right.featurette-image {
+  margin-left: 20px;
+}
+.table  {
+  background: #fff;
+}
+.docs-input-sizes  input {
+  display: block;
+}
+.feature-nav-list > li > a {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+.apartment table {
+  background: none;
+}
+.apartment-img {
+  width: 480px;
+  height: 250px;
+  margin: 0 20px 10px 0;
+}
+
+/* Mobile --------------------------------------------------------*/
+@media (max-width: 1500px) {
+	.carousel-caption {
+	  top: 5%;
+	}
+	.carousel-caption h1 {
+	  font-size: 90px;
+	}
+	.carousel-caption {
+	  padding: 36px 20px 40px 20px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.carousel-caption {
+	  top: 5%;
+	}
+	.carousel-caption h1 {
+	  font-size: 90px;
+	}
+	.carousel-caption p  {
+	  font-size: 18px;
+	}
+	.carousel-caption {
+	  padding: 70px 20px 40px 20px;
+	}
+	.carousel-caption .btn {
+	  margin-top: 20px;
+	}
+	.flex-control-nav {
+	  bottom: 20px!important; 
+	}
+}
+
+@media (max-width: 1180px) {
+	.carousel-caption h1 {
+	  font-size: 60px;
+	  padding-bottom: 0;
+	}
+	.carousel-caption p  {
+	  font-size: 16px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.flexslider {
+	  height: 430px;
+	  display: block;
+	  background: url('../img/01_carousel.jpg') no-repeat center; /* MOBILE BACKGROUND */
+	}
+	.flexslider img {
+	  display: none;
+	}
+	.carousel-caption p  {
+	  font-size: 16px;
+	}
+	.flex-control-nav {
+	  display: none;
+	}
+}
+
+@media (max-width: 979px) {
+	body {
+	  padding-right: 0px;
+	  padding-left: 0px;
+	}
+	.navbar-inverse .navbar-inner {
+	  background: rgba(13,69,146,0.9);
+	}
+	.navbar-fixed-top {
+	  margin-bottom: 0px;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom, 
+	.navbar-static-top {
+	  margin-right: 0px;
+	  margin-left: 0px;
+	}
+	.nav-collapse {
+	  width: 100%;
+	  text-align: center;
+	}
+	.nav-collapse .nav {
+	  margin: 10px 0;
+	}
+	.navbar-inverse .nav-collapse .nav > li > a, 
+	.navbar-inverse .nav-collapse .dropdown-menu a {
+	  color: #FFF;
+	  font-size: 14px;
+	  font-weight: normal;
+	}
+	.navbar .nav > li > a  {
+	  padding: 10px;
+	}
+	.navbar .btn-navbar {
+	  margin-top: 16px;
+	}
+	.navbar-inverse .brand {
+	  margin-left: 10px;
+	}
+	.carousel-caption h1 {
+	  font-size: 60px;	
+	}
+	.carousel-caption {
+	  top: 5%;
+	}
+	.container {
+	  padding-right: 20px;
+	  padding-left: 20px;
+	}
+	.smaller-items .span3 {
+	  margin-bottom: 20px;
+	}
+	.smaller-items .span3:last-child {
+	  margin-bottom: 0px;
+	}
+	.modal img {
+	  max-width: 97%;
+	}
+	.gallery img {
+	  margin-top: 10px;
+	}
+	footer  .span4 {
+	  margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 380px) {
+	.carousel-caption h1 {
+	  font-size: 45px;
+	  padding-bottom: 0;
+	}
+}
+@media (max-width: 300px) {
+	.carousel-caption h1 {
+	  font-size: 40px;
+	  padding-bottom: 0;
+	}
+}

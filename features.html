@@ -1,0 +1,757 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Features | Gedangsewu Traditional Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Load styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+	<link href="css/bootstrap-lightbox.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<!-- Load styles font-awesome-->
+	<link href="asset/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="navbar-inner">
+          <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="#About" data-toggle="modal"><i class="fa fa-info"></i> About</a></li>
+              <li><a href="#Contact" data-toggle="modal"><i class="fa fa-map-marker"></i> Contact</a></li>
+			  <li><a href="features.html"><i class="fa fa-magic"></i> Features</a></li>
+              <li class="active no-active-background"><a><i class="fa fa-phone"></i> Call Us: (123) 456-7890</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          </div>
+      </div>
+    </div>
+
+	<!-- About Modal -->
+	<div id="About" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel1"><i class="fa fa-users"></i> About Us</h3>
+	  </div>
+	  <div class="modal-body">
+	
+			<table class="table table-striped">
+              <tbody>
+			    <tr>
+                  <td><b><i class="fa fa-briefcase"></i> Company</b></td>
+				  <td>Gedangsewu Art Gallery .inc</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-map-marker"></i> Address</b></td>
+				  <td>Gedangsewu 06, 500 Brombong, East Java, ID</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-phone"></i> Telephone</b></td>
+				  <td>+ (123) 456-7890
+				  + (123) 456-7892
+				  </td>
+                </tr>
+				<tr>
+                  <td><b><i class="fa fa-print"></i> Fax</b></td>
+				  <td>+ (123) 456-7893
+				  </td>
+                </tr>
+				<tr>
+                  <td><b><i class="fa fa-envelope-o"></i> E-mail</b></td>
+				  <td>info@yourcompany.com</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-globe"></i> Internet</b></td>
+				  <td>www.yourcompany.com</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-user"></i> Director</b></td>
+				  <td>Arya Wisanggeni ST.</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-rss"></i> Activity</b></td>
+				  <td>Art Fashion, Etnict Craft, Perfoment Art, Gallery, Educations of Traditional Art</td>
+				</tr>
+              </tbody>
+            </table>
+			
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i> Close</button>
+	  </div>
+	</div>
+
+	<!-- Contact Modal -->
+	<div id="Contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel2"><i class="fa fa-envelope"></i> Contact Us</h3>
+	  </div>
+	  <div class="modal-body">
+	  	  
+		<form class="form-horizontal">
+		  <div class="control-group">
+			<label class="control-label" for="inputName"><i class="fa fa-user"></i> Your Name</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputName" placeholder="Your Name">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputEmail"><i class="fa fa-envelope-o"></i> Email</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="email" id="inputEmail" placeholder="yourname@example.com" required>
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputPhone"><i class="fa fa-phone"></i> Telephone</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputPhone" placeholder="Phone">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputFax"><i class="fa fa-print"></i> Fax</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputFax" placeholder="Fax">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputURL"><i class="fa fa-globe"></i> URL</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputURL" placeholder="http://www.example.com">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputMessage"><i class="fa fa-pencil-square-o"></i> Your remarks ...</label>
+			<div class="controls">
+			  <textarea class="input-xlarge" rows="3" id="inputMessage"></textarea>
+			</div>
+		  </div>
+		</form>
+		
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i> Close</button>
+		<button class="btn btn-blue"><i class="fa fa-sign-in"></i> Send</button>
+	  </div>
+	</div>
+	
+	<div class="main move-top">
+	
+	<div class="container content">
+	
+		<div class="row-fluid">
+			<div class="page-header">
+			  <h1>Features</h1>
+			</div>
+			
+			<ul class="nav nav-list feature-nav-list">
+			  <li><a href="#Text"><i class="icon-align-left"></i> Text</a></li>
+			  <li><a href="#Boxes"><i class="icon-th"></i> Boxes</a></li>
+			  <li><a href="#Tabs"><i class="icon-list"></i> Tabs</a></li>
+			  <li><a href="#Headings"><i class="icon-font"></i> Headings</a></li>
+			  <li><a href="#Maps"><i class="icon-plane"></i> Google Maps</a></li>
+			  <li><a href="#Buttons"><i class="icon-check"></i> Buttons</a></li>
+			  <li><a href="#Forms"><i class="icon-folder-open"></i> Forms</a></li>
+			  <li><a href="#Icons"><i class="icon-thumbs-up"></i> Social Icons</a></li>
+			</ul>
+				 
+		</div>
+
+		
+	  <section id="Text">
+	  <div class="container content">
+		<div class="row-fluid">
+			<div class="page-header">
+			  <h1>Text</h1>
+			</div>
+			
+			<!-- 1 row of columns -->
+			<div class="row-fluid">
+				<div class="span12">
+				  <h2>Alpine Apartments</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+				</div>
+			</div>
+			
+			<!-- 2 row of columns -->
+			<div class="row-fluid">
+				<div class="span6">
+				  <h2>Rooms</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+				</div>
+				<div class="span6">
+				  <h2>Apartment</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+				</div>
+			 </div>
+			
+			<!-- 3 row of columns -->
+			<div class="row-fluid">
+				<div class="span4">
+				  <h2>Rooms</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+				</div>
+				<div class="span4">
+				  <h2>Apartment</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+				</div>
+				<div class="span4">
+				  <h2>Hotel</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+				</div>
+			</div>
+			
+			<!-- Blockquote -->
+			<div class="row-fluid">
+				<div class="span12">
+				  <h4>Blockquote</h4>
+				  <br />
+				  <blockquote>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				  </blockquote>
+				</div>
+			</div>
+
+			<div class="row-fluid">				
+				<div class="span12">
+				  <h4>Separator</h4>
+				  <br />
+				  	  <div class="separator"></div>
+				</div>
+			</div>	 
+		</div>
+	  </div>
+	  </section>
+	 
+	
+	  <section id="Boxes">
+	  <div class="container content">
+		<div class="row-fluid">
+			<div class="page-header">
+			  <h1>Boxes</h1>
+			</div>
+				
+			  <!-- 3 row of columns -->
+			  <div class="row-fluid">
+				<div class="span4">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h2>Rooms</h2>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span4">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h2>Accommodation</h2>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span4">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h2>Food & Beverage</h2>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+			  </div>
+			  
+			  <!-- 4 row of columns -->
+			  <div class="row-fluid">
+				<div class="span3">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h3>Rooms</h3>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span3">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h3>Accommodation</h3>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span3">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h3>Food & Beverage</h3>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span3">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h3>Wellness</h3>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+				</div>
+			  </div>
+			  
+			  <!-- 6 row of columns -->
+			  <div class="row-fluid">
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Rooms</h4>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Accommodation</h4>
+				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Food & Beverage</h4>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Wellness</h4>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Health</h4>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span2">
+				  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+				  <h4>Company</h4>
+				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+				  <p><a class="btn btn-blue btn-small" href="#">View details &raquo;</a></p>
+				</div>
+			  </div>
+		</div>
+	  </div>
+	 
+	
+	   <div class="row-fluid">
+        <div class="span12">
+		  <a href="#"><img src="img/02_img.jpg" alt="" class="img-polaroid pull-left featurette-image"></a>
+          <h2>Cosy Accommodation and Pleasant Amenities</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+	  <div class="row-fluid">
+        <div class="span12 text-right">
+		  <a href="#"><img src="img/02_img.jpg" alt="" class="img-polaroid pull-right featurette-image"></a>
+          <h2>Health & Beauty Centre</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+		
+	<div class="container">
+		<div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Sport and recreation</h3>
+                    <p>Cras justo odio, dapibus <b><a href="#">Apartments</a></b> ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Excursions</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Rooms</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Food & Beverage</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Wellness</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+		  
+		  <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h4>Sport and recreation</h4>
+                    <p>Cras justo odio, dapibus <b><a href="#">Apartments</a></b> ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h4>Excursions</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Rooms</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h4>Food & Beverage</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Wellness</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+			  <li class="span3">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h4>Food & Beverage</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Wellness</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue">View details &raquo;</a> <a href="#" class="btn">About</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+	</div>
+		
+	<div class="content smaller-items">
+
+	  <!-- 3 row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+		  <h3>Wellness</h3>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Wellness Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+		  <h3>Health</h3>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Health Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+		  <h3>Food & Beverage</h3>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Food & Beverage Donec sed odio dui. Cras justo odio, dapibus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+	
+      <!-- 4 row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+		  <h4>Wellness</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Wellness Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span3">
+		  <h4>Health</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Health Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span3">
+		  <h4>Food & Beverage</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Food & Beverage Donec sed odio dui. Cras justo odio, dapibus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+		 <div class="span3">
+		  <h4>Sport</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>      
+          <p>Sport Donec sed odio dui. Cras justo odio, dapibus.</p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+	  
+	 </div> 
+		
+	<div class="content smaller-items">
+      <!-- 4 row of columns -->
+      <div class="row-fluid">
+        <div class="span6">
+		  <h4>Rooms</h4>
+          <p>Donec id <b><a href="#">Rooms</a></b> elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. </p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span6">
+		  <h4>Apartments</h4>
+          <p>Donec id <b><a href="#">Apartments</a></b> elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. </p>
+          <p><a class="btn btn-blue" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+	
+	</div>
+	
+	</section>
+
+	<section id="Tabs">
+
+	  <div class="row-fluid">
+		<div class="span12">
+		  <div class="page-header">
+            <h1>Tabs</h1>
+          </div>		
+		    <div class="tabbable"> <!-- Only required for left/right tabs -->
+			  <ul class="nav nav-tabs nav-tabs-blue">
+				<li class="active"><a href="#tab1" data-toggle="tab">Rooms</a></li>
+				<li><a href="#tab2" data-toggle="tab">Apartments</a></li>
+				<li><a href="#tab3" data-toggle="tab">Camp</a></li>
+			  </ul>
+			  <div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+				  <p><i class="icon-arrow-right"></i> Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p> <a href="#" class="btn btn-blue btn-small pull-right">View Rooms &raquo;</a>
+				</div>
+				<div class="tab-pane" id="tab2">
+				  <p><i class="icon-arrow-right"></i> Fusce dapibus, tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. Fusce dapibus, tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus.</p> <a href="#" class="btn btn-blue btn-small pull-right">View Apartments &raquo;</a>
+				</div>
+				<div class="tab-pane" id="tab3">
+				  <p><i class="icon-arrow-right"></i> Tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. Fusce dapibus, tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus.</p> <a href="#" class="btn btn-blue btn-small pull-right">View Camp &raquo;</a>
+				</div>
+			  </div>
+			</div>
+        </div>
+	  </div>
+	  
+	</section> 
+		
+	<section id="Headings">
+
+	   <div class="row-fluid">
+        <div class="span12 center">
+		  <div class="page-header text-left">
+            <h1>Headings</h1>
+          </div>
+		
+		  <hgroup>
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+		  </hgroup>
+		 </div>
+		 
+		 <div class="span12 call-us center">
+		  <hgroup>
+            <h1>h1. Heading 1 .call-us class</h1>
+		  </hgroup>
+		 </div>
+ 
+        </div> 
+	</section>
+		
+	<section id="Maps">
+		<div class="row-fluid">
+         <div class="span12 center">
+		   <div class="page-header text-left">
+            <h1>Maps</h1>
+          </div>
+		 
+		  <h4>Google Map</h4>
+		  <iframe height="350" class="img-polaroid" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=17+Pre%C5%BEihova+ulica,+Bre%C5%BEice,+Slovenija&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=65.557733,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Pre%C5%BEihova+ulica+17,+8250+Bre%C5%BEice,+Slovenia&amp;t=m&amp;ll=45.904643,15.60668&amp;spn=0.020904,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+		  
+         </div>
+        </div>
+	</section>
+	
+	<section id="Buttons">
+		<div class="row-fluid">
+         <div class="span12">		
+		  <div class="page-header">
+            <h1>Buttons</h1>
+          </div>		 
+
+		  <div class="bs-docs-example">
+            <p>
+              <button type="button" class="btn btn-large btn-blue">Large button</button>
+              <button type="button" class="btn btn-large">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-blue">Default button</button>
+              <button type="button" class="btn">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-small btn-blue">Small button</button>
+              <button type="button" class="btn btn-small">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-mini btn-blue">Mini button</button>
+              <button type="button" class="btn btn-mini">Mini button</button>
+            </p>
+          </div>
+         </div>
+        </div>
+	</section>
+	
+	<section id="Forms">
+		<div class="row-fluid">
+         <div class="span12">		
+		  <div class="page-header">
+            <h1>Forms</h1>
+          </div>		 
+			
+			<form>
+            <div class="controls docs-input-sizes">
+              <input class="input-mini" type="text" placeholder=".input-mini">
+              <input class="input-small" type="text" placeholder=".input-small">
+              <input class="input-medium" type="text" placeholder=".input-medium">
+              <input class="input-large" type="text" placeholder=".input-large">
+              <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+              <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+            </div>
+          </form>
+
+         </div>
+        </div>
+	</section>
+	
+	<section id="Icons">
+		<div class="row-fluid">
+         <div class="span12">		
+		  <div class="page-header">
+            <h1>Social icons</h1>
+          </div>		 
+			
+			<p class="social">
+			  <a href="#" class="social-icon behance"></a>
+			  <a href="#" class="social-icon delicious"></a>
+			  <a href="#" class="social-icon deviantart"></a>
+			  <a href="#" class="social-icon digg"></a>
+			  <a href="#" class="social-icon digg2"></a>
+			  <a href="#" class="social-icon dribbble"></a>
+			  <a href="#" class="social-icon facebook"></a>
+			  <a href="#" class="social-icon flickr"></a>
+			  <a href="#" class="social-icon forrst"></a>
+			  <a href="#" class="social-icon google"></a>
+			  <a href="#" class="social-icon google2"></a>
+			  <a href="#" class="social-icon grooveshark"></a>
+			  <a href="#" class="social-icon lastfm"></a>
+			  <a href="#" class="social-icon linkedin"></a>
+			  <a href="#" class="social-icon myspace"></a>
+			  <a href="#" class="social-icon pinterest"></a>
+			  <a href="#" class="social-icon rss"></a>
+			  <a href="#" class="social-icon skype"></a>
+			  <a href="#" class="social-icon tumblr"></a>
+			  <a href="#" class="social-icon twitter"></a>
+			  <a href="#" class="social-icon twitter2"></a>
+			  <a href="#" class="social-icon vimeo"></a>
+			  <a href="#" class="social-icon youtube"></a>
+		    </p>
+
+         </div>
+        </div>
+	</section>
+	
+	</div> <!-- /container -->
+	
+	</div> <!-- /main -->
+	
+    <!-- Footer -->
+	<div class="footer">
+	<div class="container">
+      <footer>
+	  <!-- 3 row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+          <h4><i class="fa fa-user"></i> About Us</h4>
+          <p>Elementum tristique lundium. Placerat, et tristique, ac, aenean, dis vel platea, dictumst, mattis.</p>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-briefcase"></i> The Company</h4>
+          <ul>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Brochure Request</a></li>
+			<li><a href="#">Careers</a></li>
+		  </ul>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-magic"></i> Premium Services</h4>
+          <ul>
+			<li><a href="#">Wayang Golek</a></li>
+			<li><a href="#">Wayang Kulit</a></li>
+			<li><a href="#">Wayang Wong</a></li>
+		  </ul>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-phone-square"></i> Contact Us</h4>
+          <p><i class="fa fa-phone"></i> Phone:  (123) 456-7890<br>
+		  <i class="fa fa-map-marker"></i> Address: 342 Gedangsewu, Tulungagung</p>
+		  <p class="social">
+			  <a href="#" class="social-icon facebook"></a>
+			  <a href="#" class="social-icon twitter"></a>
+			  <a href="#" class="social-icon youtube"></a>
+			  <a href="#" class="social-icon skype"></a>
+			  <a href="#" class="social-icon linkedin"></a>
+			  <a href="#" class="social-icon rss"></a>
+		  </p>
+        </div>
+      </div> 
+      </footer>
+	</div>
+	</div>
+	
+	<div class="signature">
+	<div class="container">
+		<div class="row-fluid">
+		<div class="span12">
+			<p class="pull-right"><i class="icon-arrow-up icon-white"></i> <a href="#" id="back-to-top">Back to top</a></p>
+			<p>Copyright &copy; Gedangsewu Art Gallery, Inc. / <a href="#">Privacy</a> / <a href="#">Terms</a></p>
+		</div>
+		</div>
+	</div>
+	</div>
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+	<script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+/* Social icons --------------------------------------------------------*/
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  float: left;
+  margin: 0 3px 3px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+.social-icon:hover {
+  border: 0!important;
+}
+.behance {
+  background: url('../img/social/behance.png') no-repeat;
+}
+.behance:hover {
+  background: url('../img/social/behance_hover.png') no-repeat;
+}
+.delicious {
+  background: url('../img/social/delicious.png') no-repeat;
+}
+.delicious:hover {
+  background: url('../img/social/delicious_hover.png') no-repeat;
+}
+.deviantart {
+  background: url('../img/social/deviantart.png') no-repeat;
+}
+.deviantart:hover {
+  background: url('../img/social/deviantart_hover.png') no-repeat;
+}
+.digg {
+  background: url('../img/social/digg.png') no-repeat;
+}
+.digg:hover {
+  background: url('../img/social/digg_hover.png') no-repeat;
+}
+.digg2 {
+  background: url('../img/social/digg2.png') no-repeat;
+}
+.digg2:hover {
+  background: url('../img/social/digg2_hover.png') no-repeat;
+}
+.dribbble {
+  background: url('../img/social/dribbble.png') no-repeat;
+}
+.dribbble:hover {
+  background: url('../img/social/dribbble_hover.png') no-repeat;
+}
+.facebook {
+  background: url('../img/social/facebook.png') no-repeat;
+}
+.facebook:hover {
+  background: url('../img/social/facebook_hover.png') no-repeat;
+}
+.flickr {
+  background: url('../img/social/flickr.png') no-repeat;
+}
+.flickr:hover {
+  background: url('../img/social/flickr_hover.png') no-repeat;
+}
+.forrst {
+  background: url('../img/social/forrst.png') no-repeat;
+}
+.forrst:hover {
+  background: url('../img/social/forrst_hover.png') no-repeat;
+}
+.google {
+  background: url('../img/social/google.png') no-repeat;
+}
+.google:hover {
+  background: url('../img/social/google_hover.png') no-repeat;
+}
+.google2 {
+  background: url('../img/social/google2.png') no-repeat;
+}
+.google2:hover {
+  background: url('../img/social/google2_hover.png') no-repeat;
+}
+.grooveshark {
+  background: url('../img/social/grooveshark.png') no-repeat;
+}
+.grooveshark:hover {
+  background: url('../img/social/grooveshark_hover.png') no-repeat;
+}
+.lastfm {
+  background: url('../img/social/lastfm.png') no-repeat;
+}
+.lastfm:hover {
+  background: url('../img/social/lastfm_hover.png') no-repeat;
+}
+.linkedin {
+  background: url('../img/social/linkedin.png') no-repeat;
+}
+.linkedin:hover {
+  background: url('../img/social/linkedin_hover.png') no-repeat;
+}
+.myspace {
+  background: url('../img/social/myspace.png') no-repeat;
+}
+.myspace:hover {
+  background: url('../img/social/myspace_hover.png') no-repeat;
+}
+.pinterest {
+  background: url('../img/social/pinterest.png') no-repeat;
+}
+.pinterest:hover {
+  background: url('../img/social/pinterest_hover.png') no-repeat;
+}
+.rss {
+  background: url('../img/social/rss.png') no-repeat;
+}
+.rss:hover {
+  background: url('../img/social/rss_hover.png') no-repeat;
+}
+.skype {
+  background: url('../img/social/skype.png') no-repeat;
+}
+.skype:hover {
+  background: url('../img/social/skype_hover.png') no-repeat;
+}
+.tumblr {
+  background: url('../img/social/tumblr.png') no-repeat;
+}
+.tumblr:hover {
+  background: url('../img/social/tumblr_hover.png') no-repeat;
+}
+.twitter {
+  background: url('../img/social/twitter.png') no-repeat;
+}
+.twitter:hover {
+  background: url('../img/social/twitter_hover.png') no-repeat;
+}
+.twitter2 {
+  background: url('../img/social/twitter2.png') no-repeat;
+}
+.twitter2:hover {
+  background: url('../img/social/twitter2_hover.png') no-repeat;
+}
+.vimeo {
+  background: url('../img/social/vimeo.png') no-repeat;
+}
+.vimeo:hover {
+  background: url('../img/social/vimeo_hover.png') no-repeat;
+}
+.youtube {
+  background: url('../img/social/youtube.png') no-repeat;
+}
+.youtube:hover {
+  background: url('../img/social/youtube_hover.png') no-repeat;
+}

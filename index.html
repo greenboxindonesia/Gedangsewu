@@ -1,79 +1,560 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Gedangsewu : Gedangsewu " />
+    <meta charset="utf-8">
+    <title>Welcome | Gedangsewu Traditional Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- Load styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+	<link href="css/bootstrap-lightbox.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<!-- Load styles font-awesome-->
+	<link href="asset/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
-    <title>Gedangsewu</title>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/greenboxindonesia/Gedangsewu">View on GitHub</a>
-
-          <h1 id="project_title">Gedangsewu</h1>
-          <h2 id="project_tagline">Gedangsewu </h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/greenboxindonesia/Gedangsewu/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/greenboxindonesia/Gedangsewu/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="navbar-inner">
+          <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="#About" data-toggle="modal"><i class="fa fa-info"></i> About</a></li>
+              <li><a href="#Contact" data-toggle="modal"><i class="fa fa-map-marker"></i> Contact</a></li>
+			  <li><a href="features.html"><i class="fa fa-magic"></i> Features</a></li>
+              <li class="active no-active-background"><a><i class="fa fa-phone"></i> Call Us: (123) 456-7890</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+	<!-- About Modal -->
+	<div id="About" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel1"><i class="fa fa-users"></i> About Us</h3>
+	  </div>
+	  <div class="modal-body">
+	
+			<table class="table table-striped">
+              <tbody>
+			    <tr>
+                  <td><b><i class="fa fa-briefcase"></i> Company</b></td>
+				  <td>Gedangsewu Art Gallery .inc</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-map-marker"></i> Address</b></td>
+				  <td>Gedangsewu 06, 500 Brombong, East Java, ID</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-phone"></i> Telephone</b></td>
+				  <td>+ (123) 456-7890
+				  + (123) 456-7892
+				  </td>
+                </tr>
+				<tr>
+                  <td><b><i class="fa fa-print"></i> Fax</b></td>
+				  <td>+ (123) 456-7893
+				  </td>
+                </tr>
+				<tr>
+                  <td><b><i class="fa fa-envelope-o"></i> E-mail</b></td>
+				  <td>info@yourcompany.com</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-globe"></i> Internet</b></td>
+				  <td>www.yourcompany.com</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-user"></i> Director</b></td>
+				  <td>Arya Wisanggeni ST.</td>
+				</tr>
+				<tr>
+                  <td><b><i class="fa fa-rss"></i> Activity</b></td>
+				  <td>Art Fashion, Etnict Craft, Perfoment Art, Gallery, Educations of Traditional Art</td>
+				</tr>
+              </tbody>
+            </table>
+			
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i> Close</button>
+	  </div>
+	</div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	<!-- Contact Modal -->
+	<div id="Contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel2"><i class="fa fa-envelope"></i> Contact Us</h3>
+	  </div>
+	  <div class="modal-body">
+	  	  
+		<form class="form-horizontal">
+		  <div class="control-group">
+			<label class="control-label" for="inputName"><i class="fa fa-user"></i> Your Name</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputName" placeholder="Your Name">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputEmail"><i class="fa fa-envelope-o"></i> Email</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="email" id="inputEmail" placeholder="yourname@example.com" required>
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputPhone"><i class="fa fa-phone"></i> Telephone</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputPhone" placeholder="Phone">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputFax"><i class="fa fa-print"></i> Fax</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputFax" placeholder="Fax">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputURL"><i class="fa fa-globe"></i> URL</label>
+			<div class="controls">
+			  <input class="input-xlarge" type="text" id="inputURL" placeholder="http://www.example.com">
+			</div>
+		  </div>
+		  <div class="control-group">
+			<label class="control-label" for="inputMessage"><i class="fa fa-pencil-square-o"></i> Your remarks ...</label>
+			<div class="controls">
+			  <textarea class="input-xlarge" rows="3" id="inputMessage"></textarea>
+			</div>
+		  </div>
+		</form>
+		
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i> Close</button>
+		<button class="btn btn-blue"><i class="fa fa-sign-in"></i> Send</button>
+	  </div>
+	</div>
+	
+    <header>
+    <!-- Carousel
+    ================================================== -->
+    <div class="flexslider">
+		  <ul class="slides">
+			<li>
+			<img src="img/slides/01_carousel.jpg" alt="">
+			</li>
+			<li>
+			<img src="img/slides/02_carousel.jpg" alt="">
+			</li>
+			<li>
+			<img src="img/slides/03_carousel.jpg" alt="">
+			</li>
+		  </ul>
+	</div>
+	<!-- /.carousel -->
+    </header>
+	
+	<div class="main">
+	
+	<div class="container content">
+		
+      <!-- 3 row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+		  <a href="#"><img src="img/wayang/wayang_golek.jpg" alt="" class="img-polaroid"></a>
+          <h2>Wayang Golek</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+		  <a href="#"><img src="img/wayang/wayang_kulit.jpg" alt="" class="img-polaroid"></a>
+          <h2>Wayang Kulit</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+		  <a href="#"><img src="img/wayang/wayang_wong.jpg" alt="" class="img-polaroid"></a>
+          <h2>Wayang Wong</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+      </div>
+	  
+      <!-- Blackquote -->
+      <div class="row-fluid">
+        <div class="span12">
+		  <blockquote>
+			<p>Tempor diam elementum augue nascetur elementum odio dapibus et nunc dolor parturient, aliquam integer cursus pid eu elementum, scelerisque duis, magna aenean, in? In risus penatibus a</p>
+		  </blockquote>
+		</div>
+      </div>
+	  	
+	<div class="content">
+	   <div class="row-fluid">
+        <div class="span6">
+		  <a href="#"><img src="img/02_img.jpg" alt="" class="img-polaroid pull-left featurette-image"></a>
+          <h2>Cosy Accommodation and Pleasant Amenities</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+		<div class="span6">
+		  <a href="#"><img src="img/02_img.jpg" alt="" class="img-polaroid pull-left featurette-image"></a>
+          <h2>Health &amp; Beauty Centre</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+      </div>
+	</div> <!-- /content -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<div class="separator"></div>
+	
+	<div class="content apartment">
+	  <div class="row-fluid">
+	  <div class="span5">
+		<img src="img/vcard/vcard.jpg" alt="" class="img-polaroid pull-left apartment-img">
+		</div>
+        <div class="span7">
+		<h1>Gedangsewu Art</h1>    
+		<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>	
+		<table class="table pull-right">
+            <tbody>
+              <tr>
+                <td><b><i class="fa fa-map-marker"></i> Address</b></td>
+                <td>342 Gedangsewu, Tulungagung</td>
+              </tr>
+              <tr>
+                <td><b><i class="fa fa-phone"></i> Telephone</b></td>
+                <td>(123) 456-7890</td>
+              </tr>
+		      <tr>
+                <td><b><i class="fa fa-envelope-o"></i> E-mail</b></td>
+                <td><a href="#">info@yourdomain.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+	  </div>
+	  </div>
+	  
+	  <!-- Gallery Images Sized -->
+	  <div id="Lightbox1" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  
+	  <div id="Lightbox2" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  
+	  <div id="Lightbox3" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  
+	  <div id="Lightbox4" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  
+	  <div id="Lightbox5" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  
+	  <div id="Lightbox6" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class='lightbox-header'>
+			<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+		</div>
+		<div class='lightbox-content'>
+			<img src="img/01_img.jpg" alt="">
+			<div class="lightbox-caption"><p>Your caption here</p></div>
+		</div>
+	  </div>
+	  <!-- End Gallery Images Sized -->
+	  	  
+	  <!-- 6 row of columns -->
+      <div class="row-fluid gallery">
+        <div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox1"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+        </div>
+        <div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox2"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+        </div>
+        <div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox3"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+        </div>
+		 <div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox4"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>      
+        </div>
+		<div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox5"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+        </div>
+		 <div class="span2">
+		  <a data-toggle="lightbox" href="#Lightbox6"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>      
+        </div>
+      </div>
+	  
+	 </div>
+	 
+	<div class="separator"></div>	
+	
+	<div class="content">
+		<div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Sport and recreation</h3>
+                    <p>Cras justo odio, dapibus <b><a href="#">Apartments</a></b> ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a> <a href="#" class="btn"><i class="fa fa-info"></i> About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Excursions</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Rooms</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a> <a href="#" class="btn"><i class="fa fa-info"></i> About</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img alt="" style="width: 300px; height: 140px;" src="img/01_img.jpg">
+                  <div class="caption">
+                    <h3>Food &amp; Beverage</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas <b><a href="#">Wellness</a></b> eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-blue"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a> <a href="#" class="btn"><i class="fa fa-info"></i> About</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+	</div> <!-- content -->
+	
+	<div class="separator"></div>	
+		
+	<div class="content smaller-items">
+      <!-- 4 row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+		  <h4>Wellness</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Wellness Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span3">
+		  <h4>Health</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Health Donec id elit non mi porta gravida at eget metus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span3">
+		  <h4>Food &amp; Beverage</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>
+          <p>Food &amp; Beverage Donec sed odio dui. Cras justo odio, dapibus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+		 <div class="span3">
+		  <h4>Sport</h4>
+		  <a href="#"><img src="img/01_img.jpg" alt="" class="img-polaroid"></a>      
+          <p>Sport Donec sed odio dui. Cras justo odio, dapibus.</p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- /content -->
+		
+	<div class="content smaller-items">
+      <!-- 4 row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+		  <h4>Rooms & Suites</h4>
+          <p>Donec id <b><a href="#">Rooms & Suites</a></b> elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. </p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span3">
+		  <h4>Special Packages</h4>
+          <p>Donec id <b><a href="#">Special Packages</a></b> elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. </p>
+          <p><a class="btn btn-blue" href="#"><i class="fa fa-arrow-circle-right"></i> View details &raquo;</a></p>
+        </div>
+        <div class="span6">
+		    <div class="tabbable"> <!-- Only required for left/right tabs -->
+			  <ul class="nav nav-tabs nav-tabs-blue">
+				<li class="active"><a href="#tab1" data-toggle="tab">Rooms of I. category</a></li>
+				<li><a href="#tab2" data-toggle="tab">Rooms of II. category</a></li>
+				<li><a href="#tab3" data-toggle="tab">Rooms of III. category</a></li>
+			  </ul>
+			  <div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+				  <p><i class="icon-arrow-right"></i> are functionally designed, the have a spacious bathroom and give the perfect comfort. They have LCD television and a hair dryer.</p> <a href="#" class="btn btn-blue btn-small pull-right"><i class="fa fa-arrow-circle-right"></i> View more &raquo;</a>
+				</div>
+				<div class="tab-pane" id="tab2">
+				  <p><i class="icon-arrow-right"></i> are pleasantly and simply furnished with a television and a bathroom.</p> <a href="#" class="btn btn-blue btn-small pull-right"><i class="fa fa-arrow-circle-right"></i> View more &raquo;</a>
+				</div>
+				<div class="tab-pane" id="tab3">
+				  <p><i class="icon-arrow-right"></i> are simply rooms with a sink and a toilet, there is one shower on the floor. Group beds belong to the III. category.</p> <a href="#" class="btn btn-blue btn-small pull-right"><i class="fa fa-arrow-circle-right"></i> View more &raquo;</a>
+				</div>
+			  </div>
+			</div>
+        </div>
+      </div>
+    </div> <!-- /content -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Gedangsewu maintained by <a href="https://github.com/greenboxindonesia">greenboxindonesia</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+	<div class="separator"></div>	
+	
+	<div class="content">
+	   <div class="row-fluid">
+        <div class="span12 call-us center">
+		  <div class="hgroup">
+		  <h4><i class="fa fa-question-circle"></i> Have question or concerns? Fell free to contact us at</h4>	
+          <h1><i class="fa fa-phone"></i> Phone: (123) 456-7890</h1>
+		  </div>
+		  <h4><i class="fa fa-map-marker"></i> Our Location</h4>
+		  <iframe height="350" class="img-polaroid" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=17+Pre%C5%BEihova+ulica,+Bre%C5%BEice,+Slovenija&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=65.557733,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Pre%C5%BEihova+ulica+17,+8250+Bre%C5%BEice,+Slovenia&amp;t=m&amp;ll=45.904643,15.60668&amp;spn=0.020904,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        </div>
+      </div>
+	</div> <!-- /content -->
+	
+	<div class="separator"></div>	
+	
+	<div class="content">
+	  <div class="row-fluid title">
+		<div class="span12 center">
+          <h3><i class="fa fa-desktop"></i> Be closer to your favourite brands</h3>
+		  <img src="img/logos.png" alt="" class="logos">
+        </div>
+	  </div>		
+    </div> <!-- /content -->
+	
+	</div> <!-- /container -->
+	
+	</div> <!-- /main -->
+	
+    <!-- Footer -->
+	<div class="footer">
+	<div class="container">
+      <footer>
+	  <!-- 3 row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+          <h4><i class="fa fa-user"></i> About Us</h4>
+          <p>Elementum tristique lundium. Placerat, et tristique, ac, aenean, dis vel platea, dictumst, mattis.</p>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-briefcase"></i> The Company</h4>
+          <ul>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Brochure Request</a></li>
+			<li><a href="#">Careers</a></li>
+		  </ul>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-magic"></i> Premium Services</h4>
+          <ul>
+			<li><a href="#">Wayang Golek</a></li>
+			<li><a href="#">Wayang Kulit</a></li>
+			<li><a href="#">Wayang Wong</a></li>
+		  </ul>
+        </div>
+		<div class="span3">
+          <h4><i class="fa fa-phone-square"></i> Contact Us</h4>
+          <p><i class="fa fa-phone"></i> Phone:  (123) 456-7890<br>
+		  <i class="fa fa-map-marker"></i> Address: 342 Gedangsewu, Tulungagung</p>
+		  <p class="social">
+			  <a href="#" class="social-icon facebook"></a>
+			  <a href="#" class="social-icon twitter"></a>
+			  <a href="#" class="social-icon youtube"></a>
+			  <a href="#" class="social-icon skype"></a>
+			  <a href="#" class="social-icon linkedin"></a>
+			  <a href="#" class="social-icon rss"></a>
+		  </p>
+        </div>
+      </div> 
       </footer>
-    </div>
-
-    
-
+	</div>
+	</div>
+	
+	<div class="signature">
+	<div class="container">
+		<div class="row-fluid">
+		<div class="span12">
+			<p class="pull-right"><i class="icon-arrow-up icon-white"></i> <a href="#" id="back-to-top">Back to top</a></p>
+			<p>Copyright &copy; Gedangsewu Art Gallery, Inc. / <a href="#">Privacy</a> / <a href="#">Terms</a></p>
+		</div>
+		</div>
+	</div>
+	</div>
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+	<script src="js/bootstrap-lightbox.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script defer src="js/flexslider.js"></script>
   </body>
 </html>
