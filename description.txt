@@ -1,0 +1,14 @@
+Gedangsewu is a single responsive Landing Page HTML theme.
+It is the theme for company profile and event of perfoment Art.
+It will be displayed beautifully on all mobile devices.
+
+Features
+
+HTML Landing Page
+Based on Bootstrap
+Responsive Layout
+Clean And modern
+Easy to Edit
+Awesome Landing Page Features
+23 Social Icons
+HTML5 & CSS3 Coding
